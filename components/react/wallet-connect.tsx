@@ -14,18 +14,19 @@ export const ConnectWalletButton = ({
 }: ConnectWalletType) => {
   return (
     <Button
-      w="full"
+          w="full"
+          mt={2}
       minW="fit-content"
       size="lg"
       isLoading={isLoading}
       isDisabled={isDisabled}
-          bgImage="linear-gradient(109.6deg, #20c997 11.2%, #20c997 83.1%)"
+          bgImage="linear-gradient(109.6deg, #bca2fb 25%, #78baf7 75%)"
       color="white"
       opacity={1}
       transition="all .5s ease-in-out"
       _hover={{
         bgImage:
-          'linear-gradient(109.6deg, rgba(157,75,199,1) 11.2%, rgba(119,81,204,1) 83.1%)',
+          'linear-gradient(109.6deg, #78baf7 25%, #bca2fb 75%)',
         opacity: 0.75
       }}
       _active={{

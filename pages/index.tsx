@@ -20,8 +20,8 @@ import ReactDOM from 'react-dom';
 import { dependencies, products } from '../config';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
-
 import App from "./App";
+
 
 
 
@@ -36,7 +36,7 @@ export default function Home() {
 
         
         
-        <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%' bgGradient='linear(to-l, #6610f2, #6f42c1)'>
+        <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
             
 
         <Head>
@@ -53,29 +53,22 @@ export default function Home() {
             
             
 
-            <Flex justifyContent="end" >
-
-               
-                
-                    <Stack direction='row' mr={1}>
-                        <Image
-                        height='50px'
-                        
-                            
-                        src='https://oin.vercel.app/assets/img/Oin-Font.png'
-                           
-                    />
-                </Stack>
-                
-                <WalletSection />
-                <Button variant="outline" px={2}  onClick={toggleColorMode}>
-                  <Icon
-                      as={colorMode === 'dark' ? BsFillMoonStarsFill : BsFillSunFill}
-                  />
-                </Button>
-
-                
-          </Flex>
+            <Flex justifyContent="space-between" alignItems="center">
+                <Image
+                    mt={2}
+                    height="50px"
+                    src="https://oin.vercel.app/assets/img/Oin-Font.png"
+                    alt="Oin Font"
+                />
+                <Flex alignItems="center">
+                    <WalletSection />
+                    <Button variant="outline" px={2} onClick={toggleColorMode}>
+                        <Icon
+                            as={colorMode === 'dark' ? BsFillMoonStarsFill : BsFillSunFill}
+                        />
+                    </Button>
+                </Flex>
+            </Flex>
 
            
            
@@ -109,8 +102,8 @@ export default function Home() {
                 <Stack direction='row' align='center' justify='center' mb={78} mt={78} >
                     
                     <Image
-                        height='800px'
-                        src='https://cdn-icons-png.flaticon.com/512/3588/3588273.png' 
+                        height='700px'
+                        src='https://i.imgur.com/vh463C0.png' 
                     />
                     
                 </Stack>
@@ -121,7 +114,7 @@ export default function Home() {
 
             <Stack spacing={0} direction='row' align='center' justifyContent='center'>
                 
-                <Button colorScheme='green' size='lg' align='center'>
+                <Button color='linear-gradient(109.6deg, rgba(119,81,204,1) 11.2%, #20c997 83.1%)' size='lg' align='center'>
                     Participate
                 </Button>
             </Stack>
