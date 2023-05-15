@@ -114,7 +114,7 @@ export default function Home() {
 
             <Stack spacing={0} direction='row' align='center' justifyContent='center'>
                 
-                <Button color='linear-gradient(109.6deg, rgba(119,81,204,1) 11.2%, #20c997 83.1%)' size='lg' align='center'>
+                <Button color='linear-gradient(109.6deg, rgba(119,81,204,1) 11.2%, #20c997 83.1%)' size='lg'>
                     Participate
                 </Button>
             </Stack>
