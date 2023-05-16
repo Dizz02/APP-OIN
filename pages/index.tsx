@@ -23,19 +23,17 @@ import { Image } from '@chakra-ui/react'
 import App from "./App";
 
 
-
-
-
-
-    
-
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
 
     return (
 
         
-     <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
+     
+     
+     
+     
+    <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
     
             
 
