@@ -64,7 +64,7 @@ export default function Home() {
                     <WalletSection />
                     <Button variant="outline" px={2} onClick={toggleColorMode}>
                         <Icon
-                            as={colorMode === 'dark' ? BsFillMoonStarsFill : BsFillSunFill}
+                            as={colorMode === 'light' ? BsFillMoonStarsFill : BsFillSunFill}
                         />
                     </Button>
                 </Flex>
