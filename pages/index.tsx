@@ -21,7 +21,8 @@ import { dependencies, products } from '../config';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 import App from "./App";
-
+import theme from '../config/theme'
+import { ColorModeScript } from '@chakra-ui/react'
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -30,10 +31,10 @@ export default function Home() {
 
         
      
+        
      
      
-     
-    <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
+  <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
     
             
 
@@ -44,7 +45,7 @@ export default function Home() {
         </Head>
 
     
-            
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
             <App />
             
               
