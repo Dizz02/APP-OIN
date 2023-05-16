@@ -47,7 +47,7 @@ export default function Home() {
    
    
    
- <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
+  <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
     
             
 
@@ -111,7 +111,7 @@ export default function Home() {
 
                 </div>
 
-                <Stack direction='row' align='center' justify='center' mb={78} mt={78}>
+                <Stack direction='row' align='center' justify='center' mb={25} mt={25}>
   <Image
     height={['250px', '650px']} // Set different heights for mobile and larger screens
     src='https://i.imgur.com/vh463C0.png' 
