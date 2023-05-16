@@ -36,7 +36,7 @@ export default function Home() {
 
         
         
-        <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
+    <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
             
 
         <Head>
