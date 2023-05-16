@@ -23,6 +23,13 @@ import { Image } from '@chakra-ui/react'
 import App from "./App";
 import theme from '../config/theme'
 import { ColorModeScript } from '@chakra-ui/react'
+import mobileImage from './vector.png';
+
+
+
+
+
+
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -33,8 +40,14 @@ export default function Home() {
      
         
      
-     
-  <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
+
+
+
+
+   
+   
+   
+ <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
     
             
 
@@ -98,14 +111,12 @@ export default function Home() {
 
                 </div>
 
-                <Stack direction='row' align='center' justify='center' mb={78} mt={78} >
-                    
-                    <Image
-                        height='700px'
-                        src='https://i.imgur.com/vh463C0.png' 
-                    />
-                    
-                </Stack>
+                <Stack direction='row' align='center' justify='center' mb={78} mt={78}>
+  <Image
+    height={['150px', '650px']} // Set different heights for mobile and larger screens
+    src='https://i.imgur.com/vh463C0.png' 
+  />
+</Stack>
 
                 
 
