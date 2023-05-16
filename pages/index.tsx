@@ -35,8 +35,9 @@ export default function Home() {
     return (
 
         
-        
+    
     <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
+    
             
 
         <Head>
@@ -45,7 +46,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
         </Head>
 
-
+    
             
             <App />
             
