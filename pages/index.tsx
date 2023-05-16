@@ -10,8 +10,9 @@ import {
   Link,
   Button,
   Flex,
-  Icon
-
+  Icon,
+  useColorMode,
+  useColorModeValue
 } from '@chakra-ui/react';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import { Product, Dependency, WalletSection } from '../components';
@@ -29,13 +30,12 @@ import App from "./App";
     
 
 export default function Home() {
-  
+  const { colorMode, toggleColorMode } = useColorMode();
 
     return (
 
         
-    
-  <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
+     <Container maxW="100%" maxH="100%" py={5} w='100%' h='100%'>
     
             
 
@@ -62,7 +62,11 @@ export default function Home() {
                 />
                 <Flex alignItems="center">
                     <WalletSection />
-                    
+                    <Button variant="outline" px={2} onClick={toggleColorMode}>
+                        <Icon
+                            as={colorMode === 'light' ? BsFillMoonStarsFill : BsFillSunFill}
+                        />
+                    </Button>
                 </Flex>
             </Flex>
 
