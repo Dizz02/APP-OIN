@@ -113,7 +113,7 @@ export default function Home() {
 
                 <Stack direction='row' align='center' justify='center' mb={78} mt={78}>
   <Image
-    height={['150px', '650px']} // Set different heights for mobile and larger screens
+    height={['250px', '650px']} // Set different heights for mobile and larger screens
     src='https://i.imgur.com/vh463C0.png' 
   />
 </Stack>
