@@ -1,1 +1,1 @@
-export const chainName = 'juno';
+export const chainName = 'seitestnet2';
